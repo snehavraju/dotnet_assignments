@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\dotnet_assignment2\\dotnet_assignment2.csproj",
-      "projectName": "dotnet_assignment2",
-      "projectPath": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\dotnet_assignment2\\dotnet_assignment2.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\palindrome_assignment\\palindrome\\palindrome.csproj",
+      "projectName": "palindrome",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\palindrome_assignment\\palindrome\\palindrome.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\dotnet_assignment2\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\palindrome_assignment\\palindrome\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
