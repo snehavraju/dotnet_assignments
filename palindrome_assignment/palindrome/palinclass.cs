@@ -6,12 +6,22 @@ namespace palindrome
     {
         public bool IsPalindrom( string x)
         {
-            string rev = "";
-            for (int i = x.Length-1; i >=0; i--){
-                rev += x[i].ToString();
-            }
+            
+            char[] charArray = x.ToCharArray();
+            Array.Reverse( charArray );
+            string charStr = new string ( charArray );
+            bool result = Array.Equals(x,charStr);
+            
+             /*string revs="";
+            
+            for (int i = x.Length-1; i >=0; i--)
+            {
+                revs += x[i].ToString();
+            }*/
+           
+            
 
-            if(rev==x){
+            if(result){
                 return true;
             }
             else {

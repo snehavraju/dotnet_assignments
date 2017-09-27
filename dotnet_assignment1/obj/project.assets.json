@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\helloworld_csharp\\helloworld_csharp.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\dotnet_assignments\\dotnet_assignment1\\helloworld_csharp.csproj",
       "projectName": "helloworld_csharp",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\helloworld_csharp\\helloworld_csharp.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\dotnet_assignments\\dotnet_assignment1\\helloworld_csharp.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\helloworld_csharp\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\dotnet_assignments\\dotnet_assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

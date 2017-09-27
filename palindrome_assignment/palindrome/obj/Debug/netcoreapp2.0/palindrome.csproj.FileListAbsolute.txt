@@ -8,3 +8,13 @@ C:\Users\Administrator\Documents\palindrome_assignment\palindrome\obj\Debug\netc
 C:\Users\Administrator\Documents\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.AssemblyInfo.cs
 C:\Users\Administrator\Documents\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.dll
 C:\Users\Administrator\Documents\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.pdb
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\bin\Debug\netcoreapp2.0\palindrome.deps.json
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\bin\Debug\netcoreapp2.0\palindrome.runtimeconfig.json
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\bin\Debug\netcoreapp2.0\palindrome.runtimeconfig.dev.json
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\bin\Debug\netcoreapp2.0\palindrome.dll
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\bin\Debug\netcoreapp2.0\palindrome.pdb
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.csproj.CoreCompileInputs.cache
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.AssemblyInfoInputs.cache
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.AssemblyInfo.cs
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.dll
+c:\Users\Administrator\Documents\dotnet_assignments\palindrome_assignment\palindrome\obj\Debug\netcoreapp2.0\palindrome.pdb

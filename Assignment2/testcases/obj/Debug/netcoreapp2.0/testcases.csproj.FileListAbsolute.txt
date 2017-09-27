@@ -1,0 +1,15 @@
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\testcases.deps.json
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\testcases.runtimeconfig.json
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\testcases.runtimeconfig.dev.json
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\testcases.dll
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\testcases.pdb
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\dotnet_assignment2.dll
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\bin\Debug\netcoreapp2.0\dotnet_assignment2.pdb
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\obj\Debug\netcoreapp2.0\testcases.csproj.CoreCompileInputs.cache
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\obj\Debug\netcoreapp2.0\testcases.AssemblyInfoInputs.cache
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\obj\Debug\netcoreapp2.0\testcases.AssemblyInfo.cs
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\obj\Debug\netcoreapp2.0\testcases.dll
+c:\Users\Administrator\Documents\dotnet_assignments\Assignment2\testcases\obj\Debug\netcoreapp2.0\testcases.pdb

@@ -8,3 +8,13 @@ C:\Users\Administrator\Desktop\helloworld_csharp\obj\Debug\netcoreapp2.0\hellowo
 C:\Users\Administrator\Desktop\helloworld_csharp\obj\Debug\netcoreapp2.0\helloworld_csharp.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\helloworld_csharp\obj\Debug\netcoreapp2.0\helloworld_csharp.dll
 C:\Users\Administrator\Desktop\helloworld_csharp\obj\Debug\netcoreapp2.0\helloworld_csharp.pdb
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\bin\Debug\netcoreapp2.0\helloworld_csharp.deps.json
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\bin\Debug\netcoreapp2.0\helloworld_csharp.runtimeconfig.json
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\bin\Debug\netcoreapp2.0\helloworld_csharp.runtimeconfig.dev.json
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\bin\Debug\netcoreapp2.0\helloworld_csharp.dll
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\bin\Debug\netcoreapp2.0\helloworld_csharp.pdb
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\obj\Debug\netcoreapp2.0\helloworld_csharp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\obj\Debug\netcoreapp2.0\helloworld_csharp.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\obj\Debug\netcoreapp2.0\helloworld_csharp.AssemblyInfo.cs
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\obj\Debug\netcoreapp2.0\helloworld_csharp.dll
+C:\Users\Administrator\Documents\dotnet_assignments\dotnet_assignment1\obj\Debug\netcoreapp2.0\helloworld_csharp.pdb
