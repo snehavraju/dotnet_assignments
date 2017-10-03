@@ -1,12 +1,11 @@
 using System;
 
 namespace Code{
-    class PE5{
+    public class PE5{
 
-        public void sorting(){
-            try{
-            Console.WriteLine("Enter the number to sort");
-            string a= Console.ReadLine();
+        public int sorting(string a){
+           
+            
             int c=int.Parse(a);
             int sum=0;
             string b=a;
@@ -35,12 +34,12 @@ namespace Code{
                 } else {
                     Console.WriteLine(" False");
                 }
+
+                return sum;
             
 
-            }
-            catch(Exception ex){
-                Console.WriteLine(ex.Message);
-            }
+            
+            
             }
         }
     }

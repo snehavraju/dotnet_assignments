@@ -1,11 +1,9 @@
 using System;
 
 namespace Code{
-    class PE3{
-        public void word(){
-            try{
-            Console.WriteLine("Enter the letters to know vowel or a consonant");
-            string z = Console.ReadLine();
+    public class PE3{
+        public string word(string z)
+        {                        
             int a;
             
              if (Int32.TryParse(z, out a))
@@ -21,17 +19,35 @@ namespace Code{
                 {
                 if(charArray[i]=='a' || charArray[i]=='e' || charArray[i]=='i' || charArray[i]=='o' || charArray[i]=='u'){
                     Console.WriteLine("{0} - Vowel",charArray[i]);
+                    
                 }
                 else {
                     Console.WriteLine("{0} - Consonant",charArray[i]);
+                    
                 }}
                 else{
                     Console.WriteLine("Please enter a letter");
                 }
-            }}}
-            catch(Exception ex){
-                Console.WriteLine(ex.Message);
+            }}
+            z.ToLower();
+            char[] charArraycopy = z.ToCharArray();
+            for (int i =0;i< charArraycopy.Length;i++){
+                
+                if ((charArraycopy[i] >= 'a' && charArraycopy[i] <= 'z'))
+                {
+                if(charArraycopy[i]=='a' || charArraycopy[i]=='e' || charArraycopy[i]=='i' || charArraycopy[i]=='o' || charArraycopy[i]=='u'){
+                   return "vowel";
+                    
+                }
+                else {
+                    return "consonant";
+                    
+                }}
             }
+                return "not a letter";
+                       
+            
+            
         }
 
 

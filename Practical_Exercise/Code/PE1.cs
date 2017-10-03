@@ -2,13 +2,13 @@ using System;
 
 namespace Code
 {
-    class PE1{
-        public void palin(){
-            try{
-            Console.WriteLine("Enter the number to check for palindrome");
-            long number=Convert.ToInt64(Console.ReadLine());
+    public class PE1{
+        public long palin(long number){
+            
+            
             long numbercopy=number;
             long Reverse=0;
+            long sum=0;
            while(numbercopy>0)  
             {  
                 long remainder = numbercopy % 10;  
@@ -19,7 +19,7 @@ namespace Code
 
             if (number==Reverse){
                 long num = number;
-                long sum=0;
+                
                 while(num>0){
                 long rem = num%10;
 
@@ -40,10 +40,10 @@ namespace Code
             }
 
             else Console.WriteLine("{0} is not palindrome",number);
+            return sum;
             
-            }
-            catch(Exception ex){
-                Console.WriteLine(ex.Message);
+            
+            
             }
         }
     }
@@ -52,4 +52,4 @@ namespace Code
 
 
 
-}
+

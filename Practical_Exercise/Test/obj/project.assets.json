@@ -1659,6 +1659,19 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Code/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Code.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Code.dll": {}
+        }
       }
     }
   },
@@ -5604,10 +5617,16 @@
         "xunit.runner.visualstudio.2.2.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Code/1.0.0": {
+      "type": "project",
+      "path": "../Code/Code.csproj",
+      "msbuildProject": "../Code/Code.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Code >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170628-02",
       "Microsoft.NETCore.App >= 2.0.0",
       "xunit >= 2.2.0",
@@ -5621,11 +5640,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Test\\Test.csproj",
+      "projectUniqueName": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Test\\Test.csproj",
+      "projectPath": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Test\\obj\\",
+      "outputPath": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5641,7 +5660,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Code\\Code.csproj": {
+              "projectPath": "c:\\Users\\Administrator\\Documents\\dotnet_assignments\\Practical_Exercise\\Code\\Code.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

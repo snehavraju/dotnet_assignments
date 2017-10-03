@@ -6,6 +6,7 @@ namespace Code
     {
         static void Main()
         {  
+            try{
             Console.WriteLine("Enter the option");
             Console.WriteLine("1-PE1");
             Console.WriteLine("2-PE2");
@@ -17,38 +18,51 @@ namespace Code
 
             switch(choice){
                 
-            case 1:
+            case 1: Console.WriteLine("Enter the number to check for palindrome");
+                    long number=Convert.ToInt64(Console.ReadLine());
                     PE1 p = new PE1();
-                    p.palin();
+                    p.palin(number);
                     break;
-            case 2:
+            case 2: Console.WriteLine("Enter The number to display tom or jerry");
+                    int x = int.Parse(Console.ReadLine());
                     PE2 q = new PE2();
-                    q.TomJerry();
+                    q.TomJerry(x);
                     break;
 
-            case 3: 
+            case 3: Console.WriteLine("Enter the letters to know vowel or a consonant");
+                    string z = Console.ReadLine();
                     PE3 r = new PE3();
-                    r.word();
+                    r.word(z);
                     break;
 
-            case 4:
+            case 4: Console.WriteLine("Enter the limit for series");
+                    int y=int.Parse(Console.ReadLine());
                     PE4 s = new PE4();
-                    s.series();
+                    s.series(y);
                     break;
 
-            case 5:
+            case 5: Console.WriteLine("Enter the number to sort");
+                    string a= Console.ReadLine();
                     PE5 t = new PE5();
-                    t.sorting();
+                    t.sorting(a);
                     break;
             
-            case 6:
+            case 6: Console.WriteLine("Enter the string");
+                    string str = Console.ReadLine();
+                    Console.WriteLine("Enter the integer");
+                    int num = int.Parse(Console.ReadLine());
                     PE6 u = new PE6();
-                    u.repeat();
+                    u.repeat(str,num);
                     break;
 
             default:
                     Console.WriteLine("Enter the correct choice");
-                    break;        
-        }
-    }
+                    break;   
+            }}
+            catch (Exception ex)
+            {
+                    Console.WriteLine(ex.Message);
+            }     
+        
+    }}
 }
