@@ -1,0 +1,55 @@
+using System;
+
+namespace Code
+{
+    class PE1{
+        public void palin(){
+            try{
+            Console.WriteLine("Enter the number to check for palindrome");
+            long number=Convert.ToInt64(Console.ReadLine());
+            long numbercopy=number;
+            long Reverse=0;
+           while(numbercopy>0)  
+            {  
+                long remainder = numbercopy % 10;  
+                Reverse = (Reverse * 10) + remainder;  
+                numbercopy = numbercopy / 10;  
+            }
+            
+
+            if (number==Reverse){
+                long num = number;
+                long sum=0;
+                while(num>0){
+                long rem = num%10;
+
+                if(rem%2==0){
+                    sum+=rem;
+                }
+
+                num = num/10;
+                }
+                if (sum>25)
+                {
+                Console.WriteLine("{0} is palindrome and the sum of even numbers is greater than 25 and sum={1}",number,sum);
+                } 
+                else 
+                {
+                    Console.WriteLine("{0} is palindrome and the sum of even numbers is less than 25 and sum={1}",number,sum);
+                }
+            }
+
+            else Console.WriteLine("{0} is not palindrome",number);
+            
+            }
+            catch(Exception ex){
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+
+
+
+
+
+}

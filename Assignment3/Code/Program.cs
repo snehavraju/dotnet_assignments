@@ -5,7 +5,7 @@ namespace Code
     class Program
     {
         static void Main()
-        {
+        {   try{
             int s1,s2,s3,l,b,s;
            Console.WriteLine("Enter 1 for triangle perimeter,2 for rectangle perimeter, 3 for square perimeter");
            int x = int.Parse(Console.ReadLine());
@@ -42,7 +42,11 @@ namespace Code
 
 
             else Console.WriteLine("Enter A correct choice");
-
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
 
 
 
