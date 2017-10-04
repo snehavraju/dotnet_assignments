@@ -98,7 +98,9 @@ namespace Code
                                  productdetails5 =objdisplaydeleteproductsbyname.deletebyname(productdetails5,deletestring);
                                  objdisplaydeleteproductsbyname.displayproduct(groupdetails5,productdetails5) ;  
                                  }
-                                 catch(Exception){}
+                                 catch(Exception){
+                                     Console.WriteLine("Enter correct product name");
+                                 }
                                  Console.WriteLine( "Enter 'yes' to continue deleting or type anything to exit");
                                  deleteoption2 = Console.ReadLine() ;
 

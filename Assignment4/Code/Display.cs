@@ -86,7 +86,7 @@ namespace Code
                 
                 }
                 if (j==0){
-                    throw new Exception("Enter correct product name");
+                    throw new Exception();
                 }
                 
                 
