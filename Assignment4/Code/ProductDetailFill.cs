@@ -7,13 +7,13 @@ namespace Code{
         List<ProductGroup> ProductGroupfill();
         List<ProductInfo> ProductFill();
         List<ProductInfo> ProductSort( List<ProductInfo> forsort);
-        List<ProductInfo> ProductDelete();
+        List<ProductInfo> ProductDelete( List<ProductInfo> todelete,int position );
 
     }
 
 
 
-    public class ProductDetailFill {
+    public class ProductDetailFill:IProduct {
 
        public List<ProductGroup> ProductGroupfill(){
 

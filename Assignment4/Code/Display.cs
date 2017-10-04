@@ -75,8 +75,31 @@ namespace Code
 
         }
 
+        public List<ProductInfo> deletebyname(List<ProductInfo> productdetails5, string str){
+                int deleteindex=0;
+                int j=0;
+            foreach(ProductInfo p in productdetails5){
+                if(p.ProductName.ToLower()==str.ToLower()){
+                    deleteindex = productdetails5.IndexOf(p);
+                    j=1;
+                }
+                
+                }
+                if (j==0){
+                    throw new Exception("Enter correct product name");
+                }
+                
+                
+                ProductDetailFill fordelete = new ProductDetailFill();
+                productdetails5 = fordelete.ProductDelete(productdetails5,deleteindex+1);
+                return productdetails5;
+
+            }
+        }
+
+        
+
         
 
     }
 
-}
