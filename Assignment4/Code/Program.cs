@@ -9,6 +9,9 @@ namespace Code
         {
             try
             {
+                string continueaction="";
+            do
+            {
             Console.WriteLine("Enter 1 for Displaying Products, 2 for Displaying sorted Products, 3 for searching a Product by name, 4 for deleting a product");
             int choice = int.Parse(Console.ReadLine());
 
@@ -16,117 +19,72 @@ namespace Code
             {
 
                 
-            case 1: ProductDetailFill P1 = new ProductDetailFill();
-                    List<ProductInfo> productP1details =P1.ProductFill();  
-                    List<ProductGroup> groupP1details =P1.ProductGroupfill();
-
-                    foreach(ProductGroup q in groupP1details){
-
-                    foreach(ProductInfo p in productP1details){
-
-                    if(p.GroupId==q.GroupId){
-                    Console.WriteLine("Product Group Name = {0}",q.GroupName );
-                    Console.WriteLine("Product Name = {0}",p.ProductName );
-                    Console.WriteLine("Product Description = {0}",p.ProductDescription );
-                    Console.WriteLine("Product Rate = {0}",p.ProductRate );
-                    Console.WriteLine("  ");
-                    }}}
+            case 1: ProductDetailFill objproductfill = new ProductDetailFill();
+                    List<ProductInfo> productdetails1 = objproductfill.ProductFill();  
+                    List<ProductGroup> groupdetails1 = objproductfill.ProductGroupfill();
+                    Display objdisplayproducts = new Display();
+                    objdisplayproducts.displayproduct(groupdetails1,productdetails1);
+                    
                     break;
 
-            case 2: ProductDetailFill P2 = new ProductDetailFill();
-                    List<ProductGroup> groupP2details =P2.ProductGroupfill();
-                    List<ProductInfo> tosortlist =P2.ProductFill();
-                    List<ProductInfo> productP2details =P2.ProductSort(tosortlist); 
-                    
-
-                    foreach(ProductInfo p in productP2details){
-
-                    foreach(ProductGroup q in groupP2details){
-
-                    if(p.GroupId==q.GroupId){
-                    Console.WriteLine("Product Group Name = {0}",q.GroupName );
-                    Console.WriteLine("Product Name = {0}",p.ProductName );
-                    Console.WriteLine("Product Description = {0}",p.ProductDescription );
-                    Console.WriteLine("Product Rate = {0}",p.ProductRate );
-                    Console.WriteLine("  ");
-                   }
-                   }}
-
-                   break;
+            case 2: ProductDetailFill objsortproduct = new ProductDetailFill();
+                    List<ProductGroup> groupdetails2 = objsortproduct.ProductGroupfill();
+                    List<ProductInfo> tosortlist = objsortproduct.ProductFill();
+                    List<ProductInfo> productdetails2 = objsortproduct.ProductSort(tosortlist); 
+                    Display objdisplaysortproducts = new Display();
+                    objdisplaysortproducts.displaysortproducts(groupdetails2,productdetails2);
+                    break;
 
             case 3: Console.WriteLine("Enter the product to be searched");
                     string str = Console.ReadLine();
-                    int j=0;
-                    ProductDetailFill P3 = new ProductDetailFill();
-                    List<ProductGroup> groupP3details = P3.ProductGroupfill();
-                    List<ProductInfo> productP3details = P3.ProductFill();
+                    ProductDetailFill objsearchproduct = new ProductDetailFill();
+                    List<ProductGroup> groupdetails3 = objsearchproduct.ProductGroupfill();
+                    List<ProductInfo> productdetails3 = objsearchproduct.ProductFill();
+                    Display objdisplaysearchproducts = new Display();
+                    objdisplaysearchproducts.displaysearchproducts(groupdetails3,productdetails3,str);
 
-                    foreach(ProductGroup p in groupP3details){
-                    foreach(ProductInfo q in productP3details ){
-                        if(p.GroupId == q.GroupId){
-
-                            if(q.ProductName.ToUpper().Contains(str.ToUpper())){
-                                    
-                                j=1;
-                                Console.WriteLine("Product Group Name = {0}",p.GroupName );
-                                Console.WriteLine("Product Name = {0}",q.ProductName );
-                                Console.WriteLine("Product Description = {0}",q.ProductDescription );
-                                Console.WriteLine("Product Rate = {0}",q.ProductRate );
-                                Console.WriteLine("  ");
-                                
-                            }
-
-                            
-                        }
-
-                    }}
-                    if(j==0){
-                        Console.WriteLine("No Product Found");
-                    }
+                    
                     break;
 
             case 4: 
-                    ProductDetailFill P4 = new ProductDetailFill();
-                    List<ProductGroup> groupP4details = P4.ProductGroupfill();
-                    List<ProductInfo> beforedelete = P4.ProductFill();
+                    ProductDetailFill objdeleteproduct = new ProductDetailFill();
+                    List<ProductGroup> groupdetails4 = objdeleteproduct.ProductGroupfill();
+                    List<ProductInfo> productdetails4 = objdeleteproduct.ProductFill();
+                    
+                    string deleteoption="";
+
+                    do{
                     Console.WriteLine("Enter the option number");
                     int i=1;
-                     foreach(ProductInfo p in beforedelete){
-                          Console.WriteLine("{0} - {1}",i,p.ProductName);
-                          i++;
-                           }
-                           int entered_choice=int.Parse(Console.ReadLine());
-                           List<ProductInfo> productP4details =P4.ProductDelete(beforedelete,entered_choice); 
-                           Console.WriteLine("Product list after deleting the item:");
-                           foreach(ProductGroup q in groupP4details){
-                           foreach(ProductInfo p in productP4details){
-                           if(p.GroupId==q.GroupId){
-                           Console.WriteLine("Product Group Name = {0}",q.GroupName );
-                           Console.WriteLine("Product Name = {0}",p.ProductName );
-                           Console.WriteLine("Product Description = {0}",p.ProductDescription );
-                           Console.WriteLine("Product Rate = {0}",p.ProductRate );
-                           Console.WriteLine("  ");
-                           }}}
+                     foreach(ProductInfo p in productdetails4)
+                     {
+                        Console.WriteLine("{0} - {1}",i,p.ProductName);
+                        i++;
+                     }
+                    int entered_choice=int.Parse(Console.ReadLine());
+                    productdetails4 = objdeleteproduct.ProductDelete(productdetails4,entered_choice); 
+                    Console.WriteLine("Product list after deleting the item:");
+                    Display objdisplaydeleteproducts = new Display();
+                    objdisplaydeleteproducts.displayproduct(groupdetails4,productdetails4);
+                    Console.WriteLine( "Enter 'yes' to continue deleting or type anything to exit");
+                    deleteoption = Console.ReadLine() ;
+                    }
+                      while(deleteoption.ToUpper() == "YES")   ;    
+                    break;                      
 
 
-                                        
-
-
-                        break;
-                            
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     default : Console.WriteLine("Enter the right choice");
                     break;
 
 
-            } }
+            } 
+            Console.WriteLine("Enter 'yes' to continue operations or type anything to exit");
+            continueaction = Console.ReadLine();
+
+            }
+            while(continueaction.ToUpper() == "YES");
+            
+            }
             catch(Exception ex){
                 Console.WriteLine(ex.Message);
             }      

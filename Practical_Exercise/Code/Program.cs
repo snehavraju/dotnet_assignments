@@ -8,12 +8,12 @@ namespace Code
         {  
             try{
             Console.WriteLine("Enter the option");
-            Console.WriteLine("1-PE1");
-            Console.WriteLine("2-PE2");
-            Console.WriteLine("3-PE3");
-            Console.WriteLine("4-PE4");
-            Console.WriteLine("5-PE5");
-            Console.WriteLine("6-PE6");
+            Console.WriteLine("1-PracticalExercise 1");
+            Console.WriteLine("2-PracticalExercise 2");
+            Console.WriteLine("3-PracticalExercise 3");
+            Console.WriteLine("4-PracticalExercise 4");
+            Console.WriteLine("5-PracticalExercise 5");
+            Console.WriteLine("6-PracticalExercise 6");
             int choice = int.Parse(Console.ReadLine());
 
             switch(choice){
